@@ -1,26 +1,72 @@
 //
-//  AppDelegate.m
+//  MyAppDelegate.m
 //  MyApp
 //
 //  Created by alexruperez on 31/05/13.
 //  Copyright (c) 2013 alexruperez. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MyAppDelegate.h"
 
-@implementation AppDelegate
+@implementation MyAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+void uncaughtExceptionHandler(NSException *exception)
+{
+    NSLog(@"Exception: %@", exception);
+}
+
+void signalHandler(int signal)
+{
+    NSLog(@"Signal: %d", signal);
+}
+
+- (void)setUncaughtExceptionHandler
+{
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+}
+
+- (void)setSignalHandler
+{
+    struct sigaction signalAction;
+    memset(&signalAction, 0, sizeof(signalAction));
+    signalAction.sa_handler = signalHandler;
+    sigemptyset(&signalAction.sa_mask);
+    signalAction.sa_flags = 0;
+    sigaction(SIGABRT, &signalAction, NULL);
+    sigaction(SIGILL, &signalAction, NULL);
+    sigaction(SIGBUS, &signalAction, NULL);
+    sigaction(SIGFPE, &signalAction, NULL);
+    sigaction(SIGSEGV, &signalAction, NULL);
+    sigaction(SIGTRAP, &signalAction, NULL);
+    sigaction(SIGPIPE, &signalAction, NULL);
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setUncaughtExceptionHandler];
+    [self setSignalHandler];
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
+    
+    NSString *storyboardName;
+    if ([[UIScreen mainScreen] bounds].size.height == 568)
+        storyboardName = @"MyStoryboard-568h";
+    else storyboardName = @"MyStoryboard";
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
     [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    NSLog(@"Memory Warning");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

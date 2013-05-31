@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MyAppDelegate.h
 //  MyApp
 //
 //  Created by alexruperez on 31/05/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MyAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

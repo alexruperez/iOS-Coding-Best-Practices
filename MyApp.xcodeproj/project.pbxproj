@@ -13,7 +13,7 @@
 		D50BE5401758A02A00FDE537 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50BE53F1758A02A00FDE537 /* CoreData.framework */; };
 		D50BE5461758A02A00FDE537 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5441758A02A00FDE537 /* InfoPlist.strings */; };
 		D50BE5481758A02A00FDE537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5471758A02A00FDE537 /* main.m */; };
-		D50BE54C1758A02A00FDE537 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE54B1758A02A00FDE537 /* AppDelegate.m */; };
+		D50BE54C1758A02A00FDE537 /* MyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE54B1758A02A00FDE537 /* MyAppDelegate.m */; };
 		D50BE54E1758A02A00FDE537 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D50BE54D1758A02A00FDE537 /* Default.png */; };
 		D50BE5501758A02A00FDE537 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D50BE54F1758A02A00FDE537 /* Default@2x.png */; };
 		D50BE5521758A02A00FDE537 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5511758A02A00FDE537 /* Default-568h@2x.png */; };
@@ -24,6 +24,13 @@
 		D50BE5601758A02A00FDE537 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50BE53F1758A02A00FDE537 /* CoreData.framework */; };
 		D50BE5681758A02A00FDE537 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5661758A02A00FDE537 /* InfoPlist.strings */; };
 		D50BE56B1758A02A00FDE537 /* MyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE56A1758A02A00FDE537 /* MyAppTests.m */; };
+		D50BE5781758A45900FDE537 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5771758A45900FDE537 /* MyModel.m */; };
+		D50BE57B1758A49100FDE537 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57A1758A49100FDE537 /* MyViewController.m */; };
+		D50BE57F1758A4EF00FDE537 /* MyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50BE57E1758A4EF00FDE537 /* MyStoryboard.storyboard */; };
+		D50BE5831758A54100FDE537 /* MyStoryboard-568h.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5821758A54100FDE537 /* MyStoryboard-568h.storyboard */; };
+		D50BE5861758A5EE00FDE537 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5881758A5EE00FDE537 /* Localizable.strings */; };
+		D50BE5911758A6A000FDE537 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5901758A6A000FDE537 /* Defaults.plist */; };
+		D50BE5931758A6B800FDE537 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5921758A6B800FDE537 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +53,8 @@
 		D50BE5451758A02A00FDE537 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D50BE5471758A02A00FDE537 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D50BE5491758A02A00FDE537 /* MyApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp-Prefix.pch"; sourceTree = "<group>"; };
-		D50BE54A1758A02A00FDE537 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D50BE54B1758A02A00FDE537 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D50BE54A1758A02A00FDE537 /* MyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppDelegate.h; sourceTree = "<group>"; };
+		D50BE54B1758A02A00FDE537 /* MyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppDelegate.m; sourceTree = "<group>"; };
 		D50BE54D1758A02A00FDE537 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D50BE54F1758A02A00FDE537 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D50BE5511758A02A00FDE537 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -58,6 +65,22 @@
 		D50BE5671758A02A00FDE537 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D50BE5691758A02A00FDE537 /* MyAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppTests.h; sourceTree = "<group>"; };
 		D50BE56A1758A02A00FDE537 /* MyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppTests.m; sourceTree = "<group>"; };
+		D50BE5761758A45900FDE537 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		D50BE5771758A45900FDE537 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
+		D50BE5791758A49100FDE537 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		D50BE57A1758A49100FDE537 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		D50BE57E1758A4EF00FDE537 /* MyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyStoryboard.storyboard; sourceTree = "<group>"; };
+		D50BE5821758A54100FDE537 /* MyStoryboard-568h.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MyStoryboard-568h.storyboard"; sourceTree = "<group>"; };
+		D50BE5871758A5EE00FDE537 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D50BE5891758A62E00FDE537 /* MyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyApp.entitlements; sourceTree = "<group>"; };
+		D50BE58A1758A65200FDE537 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D50BE58B1758A65200FDE537 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = file; name = "es-ES"; path = "es-ES.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D50BE58C1758A65200FDE537 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D50BE58D1758A65800FDE537 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D50BE58E1758A65800FDE537 /* es */ = {isa = PBXFileReference; lastKnownFileType = file; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D50BE58F1758A65800FDE537 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D50BE5901758A6A000FDE537 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		D50BE5921758A6B800FDE537 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +115,7 @@
 				D50BE5411758A02A00FDE537 /* MyApp */,
 				D50BE5631758A02A00FDE537 /* MyAppTests */,
 				D50BE5381758A02900FDE537 /* Frameworks */,
+				D50BE5941758A72800FDE537 /* 3rd Party Frameworks */,
 				D50BE5371758A02900FDE537 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,9 +144,8 @@
 		D50BE5411758A02A00FDE537 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
-				D50BE54A1758A02A00FDE537 /* AppDelegate.h */,
-				D50BE54B1758A02A00FDE537 /* AppDelegate.m */,
-				D50BE5531758A02A00FDE537 /* MyApp.xcdatamodeld */,
+				D50BE5741758A07600FDE537 /* Classes */,
+				D50BE57C1758A4BF00FDE537 /* Resources */,
 				D50BE5421758A02A00FDE537 /* Supporting Files */,
 			);
 			path = MyApp;
@@ -131,13 +154,14 @@
 		D50BE5421758A02A00FDE537 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D50BE5431758A02A00FDE537 /* MyApp-Info.plist */,
+				D50BE5881758A5EE00FDE537 /* Localizable.strings */,
 				D50BE5441758A02A00FDE537 /* InfoPlist.strings */,
+				D50BE5891758A62E00FDE537 /* MyApp.entitlements */,
+				D50BE5431758A02A00FDE537 /* MyApp-Info.plist */,
 				D50BE5471758A02A00FDE537 /* main.m */,
 				D50BE5491758A02A00FDE537 /* MyApp-Prefix.pch */,
-				D50BE54D1758A02A00FDE537 /* Default.png */,
-				D50BE54F1758A02A00FDE537 /* Default@2x.png */,
-				D50BE5511758A02A00FDE537 /* Default-568h@2x.png */,
+				D50BE5901758A6A000FDE537 /* Defaults.plist */,
+				D50BE5921758A6B800FDE537 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +183,55 @@
 				D50BE5661758A02A00FDE537 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D50BE5741758A07600FDE537 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D50BE5751758A43700FDE537 /* Models */,
+				D50BE54A1758A02A00FDE537 /* MyAppDelegate.h */,
+				D50BE54B1758A02A00FDE537 /* MyAppDelegate.m */,
+				D50BE5791758A49100FDE537 /* MyViewController.h */,
+				D50BE57A1758A49100FDE537 /* MyViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D50BE5751758A43700FDE537 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D50BE5531758A02A00FDE537 /* MyApp.xcdatamodeld */,
+				D50BE5761758A45900FDE537 /* MyModel.h */,
+				D50BE5771758A45900FDE537 /* MyModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D50BE57C1758A4BF00FDE537 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D50BE57E1758A4EF00FDE537 /* MyStoryboard.storyboard */,
+				D50BE5821758A54100FDE537 /* MyStoryboard-568h.storyboard */,
+				D50BE54D1758A02A00FDE537 /* Default.png */,
+				D50BE54F1758A02A00FDE537 /* Default@2x.png */,
+				D50BE5511758A02A00FDE537 /* Default-568h@2x.png */,
+				D50BE57D1758A4CA00FDE537 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D50BE57D1758A4CA00FDE537 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D50BE5941758A72800FDE537 /* 3rd Party Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3rd Party Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +288,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"es-ES",
+				es,
 			);
 			mainGroup = D50BE52D1758A02900FDE537;
 			productRefGroup = D50BE5371758A02900FDE537 /* Products */;
@@ -236,6 +311,11 @@
 				D50BE54E1758A02A00FDE537 /* Default.png in Resources */,
 				D50BE5501758A02A00FDE537 /* Default@2x.png in Resources */,
 				D50BE5521758A02A00FDE537 /* Default-568h@2x.png in Resources */,
+				D50BE57F1758A4EF00FDE537 /* MyStoryboard.storyboard in Resources */,
+				D50BE5831758A54100FDE537 /* MyStoryboard-568h.storyboard in Resources */,
+				D50BE5861758A5EE00FDE537 /* Localizable.strings in Resources */,
+				D50BE5911758A6A000FDE537 /* Defaults.plist in Resources */,
+				D50BE5931758A6B800FDE537 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D50BE5481758A02A00FDE537 /* main.m in Sources */,
-				D50BE54C1758A02A00FDE537 /* AppDelegate.m in Sources */,
+				D50BE54C1758A02A00FDE537 /* MyAppDelegate.m in Sources */,
 				D50BE5551758A02A00FDE537 /* MyApp.xcdatamodeld in Sources */,
+				D50BE5781758A45900FDE537 /* MyModel.m in Sources */,
+				D50BE57B1758A49100FDE537 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +381,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D50BE5451758A02A00FDE537 /* en */,
+				D50BE58A1758A65200FDE537 /* es-ES */,
+				D50BE58D1758A65800FDE537 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -307,8 +391,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				D50BE5671758A02A00FDE537 /* en */,
+				D50BE58C1758A65200FDE537 /* es-ES */,
+				D50BE58F1758A65800FDE537 /* es */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D50BE5881758A5EE00FDE537 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D50BE5871758A5EE00FDE537 /* en */,
+				D50BE58B1758A65200FDE537 /* es-ES */,
+				D50BE58E1758A65800FDE537 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,7 +422,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -358,7 +453,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -375,10 +469,12 @@
 		D50BE56F1758A02A00FDE537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyApp/MyApp.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyApp/MyApp-Prefix.pch";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,10 +482,12 @@
 		D50BE5701758A02A00FDE537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyApp/MyApp.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyApp/MyApp-Prefix.pch";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
