@@ -2,6 +2,9 @@ iOS Coding Best Practices
 =========================
 
 
+![alt text](http://raw.github.com/alexruperez/iOS-Coding-Best-Practices/master/MyAppFiles.png "MyApp Files")
+
+
 ## `MyModel.h`
 #### Description
 MyModel header file. Header files contain class, type, function, properties, and constant declarations.
@@ -9,9 +12,9 @@ MyModel header file. Header files contain class, type, function, properties, and
 #### Documentation
 [Learning Objective-C: A Primer](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/)
 
-[NSObject Class Reference](https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html)
+[NSObject Class Reference](http://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html)
 
-[NSObject Protocol Reference](https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html)
+[NSObject Protocol Reference](http://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html)
 
 
 ## `MyModel.m`
@@ -21,9 +24,9 @@ MyModel source file. Source files can contain both Objective-C and C code, imple
 #### Documentation
 [Learning Objective-C: A Primer](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/)
 
-[NSObject Class Reference](https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html)
+[NSObject Class Reference](http://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html)
 
-[NSObject Protocol Reference](https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html)
+[NSObject Protocol Reference](http://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html)
 
 
 ## `MyApp.xcdatamodeld`
@@ -41,9 +44,9 @@ MyAppDelegate header file. Header files contain class, type, function, propertie
 #### Documentation
 [iOS App Programming Guide](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppArchitecture/AppArchitecture.html)
 
-[UIApplication Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplication_Class/Reference/Reference.html)
+[UIApplication Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplication_Class/Reference/Reference.html)
 
-[UIApplicationDelegate Protocol Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
+[UIApplicationDelegate Protocol Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
 
 
 ## `MyAppDelegate.m`
@@ -53,9 +56,9 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
 #### Documentation
 [iOS App Programming Guide](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppArchitecture/AppArchitecture.html)
 
-[UIApplication Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplication_Class/Reference/Reference.html)
+[UIApplication Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplication_Class/Reference/Reference.html)
 
-[UIApplicationDelegate Protocol Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
+[UIApplicationDelegate Protocol Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
 
 
 ## `MyViewController.h`
@@ -65,7 +68,7 @@ MyViewController header file. Header files contain class, type, function, proper
 #### Documentation
 [View Controller Programming Guide for iOS](http://developer.apple.com/library/ios/#featuredarticles/ViewControllerPGforiPhoneOS/BasicViewControllers/BasicViewControllers.html#//apple_ref/doc/uid/TP40007457-CH101-SW1)
 
-[UIViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html)
+[UIViewController Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html)
 
 
 ## `MyViewController.m`
@@ -75,7 +78,7 @@ MyViewController source file. Source files can contain both Objective-C and C co
 #### Documentation
 [View Controller Programming Guide for iOS](http://developer.apple.com/library/ios/#featuredarticles/ViewControllerPGforiPhoneOS/BasicViewControllers/BasicViewControllers.html#//apple_ref/doc/uid/TP40007457-CH101-SW1)
 
-[UIViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html)
+[UIViewController Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html)
 
 
 ## `MyStoryboard.storyboard`
@@ -85,7 +88,7 @@ A storyboard represents the screens in an app and the transitions between them.
 #### Documentation
 [Your Second iOS App: Storyboards](http://developer.apple.com/library/ios/#documentation/iPhone/Conceptual/SecondiOSAppTutorial/GettingStarted/GettingStarted.html#//apple_ref/doc/uid/TP40011318-CH2-SW4)
 
-[UIStoryboard Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
+[UIStoryboard Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
 
 
 ## `MyStoryboard-568h.storyboard`
@@ -95,7 +98,7 @@ A storyboard represents the screens in an app and the transitions between them. 
 #### Documentation
 [Your Second iOS App: Storyboards](http://developer.apple.com/library/ios/#documentation/iPhone/Conceptual/SecondiOSAppTutorial/GettingStarted/GettingStarted.html#//apple_ref/doc/uid/TP40011318-CH2-SW4)
 
-[UIStoryboard Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
+[UIStoryboard Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
 
 
 ## `Default.png`
@@ -143,7 +146,7 @@ Contains individual keys you want localized and the appropriately translated val
 Set entitlement values in order to enable iCloud, push notifications, and App Sandbox.
 
 #### Documentation
-[Entitlement Key Reference](https://developer.apple.com/library/mac/#documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)
+[Entitlement Key Reference](http://developer.apple.com/library/mac/#documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)
 
 
 ## `MyApp-Info.plist`
@@ -167,7 +170,7 @@ The main function in main.m calls the UIApplicationMain function within an autor
 Add general imports or declare general project variables in this file.
 
 #### Documentation
-[SDK Compatibility Guide](https://developer.apple.com/library/ios/#documentation/DeveloperTools/Conceptual/cross_development/Configuring/configuring.html#//apple_ref/doc/uid/10000163i-CH1-SW2)
+[SDK Compatibility Guide](http://developer.apple.com/library/ios/#documentation/DeveloperTools/Conceptual/cross_development/Configuring/configuring.html#//apple_ref/doc/uid/10000163i-CH1-SW2)
 
 
 ## `Defaults.plist`
@@ -180,7 +183,7 @@ This file has been created by me, you can declare the default values of NSUserDe
 This bundle contains one or more Settings page files that describe the individual pages of preferences. It may also include other support files needed to display your preferences, such as images or localized strings.
 
 #### Documentation
-[Preferences and Settings Programming Guide](https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html#//apple_ref/doc/uid/10000059i-CH6-SW5)
+[Preferences and Settings Programming Guide](http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html#//apple_ref/doc/uid/10000059i-CH6-SW5)
 
 
 ## `MyAppTests.h`
