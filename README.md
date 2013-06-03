@@ -1,6 +1,7 @@
 iOS Coding Best Practices
 =========================
 
+
 ![MyApp Files](https://raw.github.com/alexruperez/iOS-Coding-Best-Practices/master/MyAppFiles.png "MyApp Files")
 
 ## `MyModel.h`
