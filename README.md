@@ -62,7 +62,7 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
 [UIApplicationDelegate Protocol Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
 
 #### Recommended code
-```objective-c
+```
   //  MyAppDelegate.m
   void uncaughtExceptionHandler(NSException *exception)
   {
@@ -137,7 +137,7 @@ A storyboard represents the screens in an app and the transitions between them. 
 [UIStoryboard Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
 
 #### Recommended code
-```objective-c
+```
     //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
     NSString *storyboardName;
     if ([[UIScreen mainScreen] bounds].size.height == 568)
@@ -227,7 +227,7 @@ Add general imports or declare general project variables in this file.
 You can declare the default values of NSUserDefaults on it.
 
 #### Recommended code
-```objective-c
+```
     //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
     [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
 ```
@@ -268,42 +268,43 @@ MyAppTests information property list file, comes preconfigured with keys that ev
 ## Recommended 3rd Party Frameworks
 
 
-## [InAppSettings](http://github.com/futuretap/InAppSettingsKit)
+
+### [InAppSettings](http://github.com/futuretap/InAppSettingsKit)
 Allows settings to be in-app in addition to being in the Settings app.
 
 
-## [MTStatusBarOverlay](http://github.com/myell0w/MTStatusBarOverlay)
+### [MTStatusBarOverlay](http://github.com/myell0w/MTStatusBarOverlay)
 Custom status bar overlay seen in Apps like Reeder, Evernote and Google Mobile App
 
 
-## [Appirater](http://github.com/arashpayan/appirater)
+### [Appirater](http://github.com/arashpayan/appirater)
 A utility that reminds your iPhone app's users to review the app.
 
 
-## [Harpy](http://github.com/ArtSabintsev/Harpy)
+### [Harpy](http://github.com/ArtSabintsev/Harpy)
 Notify users when a new version of your iOS app is available, and prompt them with the App Store link.
 
 
-## [MKiCloudSync](http://github.com/MugunthKumar/MKiCloudSync)
+### [MKiCloudSync](http://github.com/MugunthKumar/MKiCloudSync)
 Sync your NSUserDefaults to iCloud automatically.
 
 
-## [AFNetworking](http://github.com/AFNetworking/AFNetworking)
+### [AFNetworking](http://github.com/AFNetworking/AFNetworking)
 A delightful iOS and OS X networking framework.
 
 
-## [MBProgressHUD](http://github.com/jdg/MBProgressHUD)
+### [MBProgressHUD](http://github.com/jdg/MBProgressHUD)
 Displays a translucent HUD with an indicator and/or labels while work is being done in a background thread.
 
 
-## [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
+### [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
 Cocoa UI component for chat bubbles with avatars and images support.
 
 
-## [MPNotificationView](http://github.com/Moped/MPNotificationView)
+### [MPNotificationView](http://github.com/Moped/MPNotificationView)
 An in-app notification view that mimics the iOS 6 notification views which appear above the status bar.
 
 
-## [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
+### [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
 Cocoa UI component for chat bubbles with avatars and images support.
 
