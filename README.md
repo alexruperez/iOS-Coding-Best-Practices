@@ -1,5 +1,7 @@
-iOS Coding Best Practices
-=========================
+# iOS Coding Best Practices
+
+
+## File Structure
 
 
 ![MyApp Files](https://raw.github.com/alexruperez/iOS-Coding-Best-Practices/master/MyAppFiles.png "MyApp Files")
@@ -59,6 +61,41 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
 
 [UIApplicationDelegate Protocol Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
 
+#### Recommended code
+```objective-c
+  //  MyAppDelegate.m
+  void uncaughtExceptionHandler(NSException *exception)
+  {
+    NSLog(@"Exception: %@", exception);
+  }
+
+  void signalHandler(int signal)
+  {
+    NSLog(@"Signal: %d", signal);
+  }
+
+  - (void)setUncaughtExceptionHandler
+  {
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+  }
+
+  - (void)setSignalHandler
+  {
+    struct sigaction signalAction;
+    memset(&signalAction, 0, sizeof(signalAction));
+    signalAction.sa_handler = signalHandler;
+    sigemptyset(&signalAction.sa_mask);
+    signalAction.sa_flags = 0;
+    sigaction(SIGABRT, &signalAction, NULL);
+    sigaction(SIGILL, &signalAction, NULL);
+    sigaction(SIGBUS, &signalAction, NULL);
+    sigaction(SIGFPE, &signalAction, NULL);
+    sigaction(SIGSEGV, &signalAction, NULL);
+    sigaction(SIGTRAP, &signalAction, NULL);
+    sigaction(SIGPIPE, &signalAction, NULL);
+  }
+```
+
 
 ## `MyViewController.h`
 #### Description
@@ -98,6 +135,19 @@ A storyboard represents the screens in an app and the transitions between them. 
 [Your Second iOS App: Storyboards](http://developer.apple.com/library/ios/#documentation/iPhone/Conceptual/SecondiOSAppTutorial/GettingStarted/GettingStarted.html#//apple_ref/doc/uid/TP40011318-CH2-SW4)
 
 [UIStoryboard Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
+
+#### Recommended code
+```objective-c
+    //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
+    NSString *storyboardName;
+    if ([[UIScreen mainScreen] bounds].size.height == 568)
+      storyboardName = @"MyStoryboard-568h";
+    else storyboardName = @"MyStoryboard";
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
+    [self.window makeKeyAndVisible];
+```
 
 
 ## `Default.png`
@@ -174,7 +224,13 @@ Add general imports or declare general project variables in this file.
 
 ## `Defaults.plist`
 #### Description
-This file has been created by me, you can declare the default values of NSUserDefaults on it.
+You can declare the default values of NSUserDefaults on it.
+
+#### Recommended code
+```objective-c
+    //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
+    [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
+```
 
 
 ## `Settings.bundle`
@@ -207,3 +263,47 @@ MyAppTests information property list file, comes preconfigured with keys that ev
 
 #### Documentation
 [Information Property List Key Reference](http://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)
+
+
+## Recommended 3rd Party Frameworks
+
+
+## [InAppSettings](http://github.com/futuretap/InAppSettingsKit)
+Allows settings to be in-app in addition to being in the Settings app.
+
+
+## [MTStatusBarOverlay](http://github.com/myell0w/MTStatusBarOverlay)
+Custom status bar overlay seen in Apps like Reeder, Evernote and Google Mobile App
+
+
+## [Appirater](http://github.com/arashpayan/appirater)
+A utility that reminds your iPhone app's users to review the app.
+
+
+## [Harpy](http://github.com/ArtSabintsev/Harpy)
+Notify users when a new version of your iOS app is available, and prompt them with the App Store link.
+
+
+## [MKiCloudSync](http://github.com/MugunthKumar/MKiCloudSync)
+Sync your NSUserDefaults to iCloud automatically.
+
+
+## [AFNetworking](http://github.com/AFNetworking/AFNetworking)
+A delightful iOS and OS X networking framework.
+
+
+## [MBProgressHUD](http://github.com/jdg/MBProgressHUD)
+Displays a translucent HUD with an indicator and/or labels while work is being done in a background thread.
+
+
+## [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
+Cocoa UI component for chat bubbles with avatars and images support.
+
+
+## [MPNotificationView](http://github.com/Moped/MPNotificationView)
+An in-app notification view that mimics the iOS 6 notification views which appear above the status bar.
+
+
+## [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
+Cocoa UI component for chat bubbles with avatars and images support.
+
