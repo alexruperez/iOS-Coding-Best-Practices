@@ -304,7 +304,3 @@ Cocoa UI component for chat bubbles with avatars and images support.
 ### [MPNotificationView](http://github.com/Moped/MPNotificationView)
 An in-app notification view that mimics the iOS 6 notification views which appear above the status bar.
 
-
-### [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
-Cocoa UI component for chat bubbles with avatars and images support.
-
