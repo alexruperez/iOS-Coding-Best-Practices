@@ -269,39 +269,43 @@ MyAppTests information property list file, comes preconfigured with keys that ev
 
 
 
-### [InAppSettings](http://github.com/futuretap/InAppSettingsKit)
+### [futuretap/InAppSettingsKit](http://github.com/futuretap/InAppSettingsKit)
 Allows settings to be in-app in addition to being in the Settings app.
 
 
-### [Appirater](http://github.com/arashpayan/appirater)
+### [arashpayan/appirater](http://github.com/arashpayan/appirater)
 A utility that reminds your iPhone app's users to review the app.
 
 
-### [Harpy](http://github.com/ArtSabintsev/Harpy)
+### [ArtSabintsev/Harpy](http://github.com/ArtSabintsev/Harpy)
 Notify users when a new version of your iOS app is available, and prompt them with the App Store link.
 
 
-### [MKiCloudSync](https://github.com/a2/MKiCloudSync)
+### [a2/MKiCloudSync](https://github.com/a2/MKiCloudSync)
 Sync your NSUserDefaults to iCloud automatically. ([Alexsander Akers](https://github.com/a2) fork)
 
 
-### [AFNetworking](http://github.com/AFNetworking/AFNetworking)
+### [AFNetworking/AFNetworking](http://github.com/AFNetworking/AFNetworking)
 A delightful iOS and OS X networking framework.
 
 
-### [MBProgressHUD](http://github.com/jdg/MBProgressHUD)
+### [rs/SDWebImage](http://github.com/rs/SDWebImage)
+Asynchronous image downloader with cache support with an UIImageView category.
+
+
+### [jdg/MBProgressHUD](http://github.com/jdg/MBProgressHUD)
 Displays a translucent HUD with an indicator and/or labels while work is being done in a background thread.
 
 
-### [MTStatusBarOverlay](http://github.com/myell0w/MTStatusBarOverlay)
+### [myell0w/MTStatusBarOverlay](http://github.com/myell0w/MTStatusBarOverlay)
 Custom status bar overlay seen in Apps like Reeder, Evernote and Google Mobile App.
 WARNING: iOS Human Interface Guidelines doesn't recommend an overlay on top of the UIStatusBar.
 
 
-### [UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
+### [AlexBarinov/UIBubbleTableView](http://github.com/AlexBarinov/UIBubbleTableView)
 Cocoa UI component for chat bubbles with avatars and images support.
 
 
-### [MPNotificationView](http://github.com/Moped/MPNotificationView)
+### [Moped/MPNotificationView](http://github.com/Moped/MPNotificationView)
 An in-app notification view that mimics the iOS 6 notification views which appear above the status bar.
 
