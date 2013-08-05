@@ -95,8 +95,9 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
     sigaction(SIGTRAP, &signalAction, NULL);
     sigaction(SIGPIPE, &signalAction, NULL);
   }
-  
+
 ```
+
 
 ## `MyViewController.h`
 #### Description
@@ -151,6 +152,7 @@ A storyboard represents the screens in an app and the transitions between them. 
     [self.window makeKeyAndVisible];
     
 ```
+
 
 ## `Default.png`
 #### Description
@@ -235,6 +237,7 @@ You can declare the default values of NSUserDefaults on it.
     [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
     
 ```
+
 
 ## `Settings.bundle`
 #### Description
