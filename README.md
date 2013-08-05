@@ -63,6 +63,7 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
 
 #### Recommended code
 ```Objective-C
+
   //  MyAppDelegate.m
   void uncaughtExceptionHandler(NSException *exception)
   {
@@ -94,6 +95,7 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
     sigaction(SIGTRAP, &signalAction, NULL);
     sigaction(SIGPIPE, &signalAction, NULL);
   }
+
 ```
 
 
@@ -138,6 +140,7 @@ A storyboard represents the screens in an app and the transitions between them. 
 
 #### Recommended code
 ```Objective-C
+    
     //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
     NSString *storyboardName;
     if ([[UIScreen mainScreen] bounds].size.height == 568)
@@ -147,6 +150,7 @@ A storyboard represents the screens in an app and the transitions between them. 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
     [self.window makeKeyAndVisible];
+    
 ```
 
 
@@ -228,8 +232,10 @@ You can declare the default values of NSUserDefaults on it.
 
 #### Recommended code
 ```Objective-C
+    
     //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
     [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
+    
 ```
 
 
