@@ -62,7 +62,9 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
 [UIApplicationDelegate Protocol Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html)
 
 #### Recommended code
+
 ```
+
 //  MyAppDelegate.m
 void uncaughtExceptionHandler(NSException *exception)
 {
@@ -94,7 +96,9 @@ void signalHandler(int signal)
   sigaction(SIGTRAP, &signalAction, NULL);
   sigaction(SIGPIPE, &signalAction, NULL);
 }
+
 ```
+
 
 ## `MyViewController.h`
 #### Description
@@ -136,7 +140,9 @@ A storyboard represents the screens in an app and the transitions between them. 
 [UIStoryboard Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)
 
 #### Recommended code
+
 ```
+
 //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
 NSString *storyboardName;
 if ([[UIScreen mainScreen] bounds].size.height == 568) storyboardName = @"MyStoryboard-568h";
@@ -145,7 +151,9 @@ else storyboardName = @"MyStoryboard";
 self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 self.window.rootViewController = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
 [self.window makeKeyAndVisible];
+
 ```
+
 
 ## `Default.png`
 #### Description
@@ -224,10 +232,14 @@ Add general imports or declare general project variables in this file.
 You can declare the default values of NSUserDefaults on it.
 
 #### Recommended code
+
 ```
+
 //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
 [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
+
 ```
+
 
 ## `Settings.bundle`
 #### Description
