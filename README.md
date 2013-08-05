@@ -63,41 +63,38 @@ MyAppDelegate source file. Handle state transitions within the app. For example,
 
 #### Recommended code
 ```
-  
-  //  MyAppDelegate.m
-  void uncaughtExceptionHandler(NSException *exception)
-  {
-    NSLog(@"Exception: %@", exception);
-  }
+//  MyAppDelegate.m
+void uncaughtExceptionHandler(NSException *exception)
+{
+  NSLog(@"Exception: %@", exception);
+}
 
-  void signalHandler(int signal)
-  {
-    NSLog(@"Signal: %d", signal);
-  }
+void signalHandler(int signal)
+{
+  NSLog(@"Signal: %d", signal);
+}
 
-  - (void)setUncaughtExceptionHandler
-  {
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-  }
+- (void)setUncaughtExceptionHandler
+{
+  NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+}
 
-  - (void)setSignalHandler
-  {
-    struct sigaction signalAction;
-    memset(&signalAction, 0, sizeof(signalAction));
-    signalAction.sa_handler = signalHandler;
-    sigemptyset(&signalAction.sa_mask);
-    signalAction.sa_flags = 0;
-    sigaction(SIGABRT, &signalAction, NULL);
-    sigaction(SIGILL, &signalAction, NULL);
-    sigaction(SIGBUS, &signalAction, NULL);
-    sigaction(SIGFPE, &signalAction, NULL);
-    sigaction(SIGSEGV, &signalAction, NULL);
-    sigaction(SIGTRAP, &signalAction, NULL);
-    sigaction(SIGPIPE, &signalAction, NULL);
-  }
-
+- (void)setSignalHandler
+{
+  struct sigaction signalAction;
+  memset(&signalAction, 0, sizeof(signalAction));
+  signalAction.sa_handler = signalHandler;
+  sigemptyset(&signalAction.sa_mask);
+  signalAction.sa_flags = 0;
+  sigaction(SIGABRT, &signalAction, NULL);
+  sigaction(SIGILL, &signalAction, NULL);
+  sigaction(SIGBUS, &signalAction, NULL);
+  sigaction(SIGFPE, &signalAction, NULL);
+  sigaction(SIGSEGV, &signalAction, NULL);
+  sigaction(SIGTRAP, &signalAction, NULL);
+  sigaction(SIGPIPE, &signalAction, NULL);
+}
 ```
-
 
 ## `MyViewController.h`
 #### Description
@@ -140,19 +137,15 @@ A storyboard represents the screens in an app and the transitions between them. 
 
 #### Recommended code
 ```
-    
-    //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
-    NSString *storyboardName;
-    if ([[UIScreen mainScreen] bounds].size.height == 568)
-      storyboardName = @"MyStoryboard-568h";
-    else storyboardName = @"MyStoryboard";
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
-    [self.window makeKeyAndVisible];
-    
-```
+//  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
+NSString *storyboardName;
+if ([[UIScreen mainScreen] bounds].size.height == 568) storyboardName = @"MyStoryboard-568h";
+else storyboardName = @"MyStoryboard";
 
+self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+self.window.rootViewController = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
+[self.window makeKeyAndVisible];
+```
 
 ## `Default.png`
 #### Description
@@ -232,12 +225,9 @@ You can declare the default values of NSUserDefaults on it.
 
 #### Recommended code
 ```
-    
-    //  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
-    [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
-    
+//  MyAppDelegate.m - application:didFinishLaunchingWithOptions:
+[[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
 ```
-
 
 ## `Settings.bundle`
 #### Description
